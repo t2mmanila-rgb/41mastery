@@ -111,8 +111,9 @@ export default function App() {
                             <span className="font-tech text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-teal">Global Edition // 2026</span>
                           </div>
                           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.85] tracking-tighter mb-10 text-dark">
-                            MASTER THE<br />
-                            <span className="text-cyan-accent">AI REVOLUTION.</span>
+                            MASTER<br />
+                            THE <span className="text-cyan-accent">AI</span><br />
+                            <span className="text-cyan-accent">REVOLUTION.</span>
                           </h1>
                           <p className="text-lg md:text-xl lg:text-2xl text-dark/80 leading-relaxed mb-12 max-w-xl font-bold">
                             Demystifying AI for global professionals. Learn how to leverage the power of AI from two industry leaders dedicated to your growth.
