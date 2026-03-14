@@ -340,7 +340,7 @@ export const COURSES: Course[] = [
       "Write better prompts for ChatGPT",
       "Use AI confidently without a technical background"
     ],
-    link: "#",
+    link: "https://bit.ly/3N172q1?r=qr",
     category: 'AI'
   },
   {
@@ -355,7 +355,7 @@ export const COURSES: Course[] = [
       "Build repeatable AI workflows",
       "Support writing and organization"
     ],
-    link: "#",
+    link: "https://bit.ly/3N172q1?r=qr",
     category: 'AI'
   },
   {
@@ -370,7 +370,7 @@ export const COURSES: Course[] = [
       "Create launch materials with AI",
       "Smart and ethical AI use in business"
     ],
-    link: "#",
+    link: "https://bit.ly/3N172q1?r=qr",
     category: 'AI'
   },
   {
@@ -385,7 +385,7 @@ export const COURSES: Course[] = [
       "AI apps for career growth",
       "Human strengths AI cannot replace"
     ],
-    link: "#",
+    link: "https://bit.ly/3N172q1?r=qr",
     category: 'AI'
   },
   // Business Growth Series (New)
@@ -400,7 +400,7 @@ export const COURSES: Course[] = [
       "Shift your mindset from doing random acts of marketing just based on what’s trending, to building a conversion-focused system.",
       "Walk away with a realistic, 30-day action plan to plug the leaks in your sales process."
     ],
-    link: "#",
+    link: "https://bit.ly/4lqeIi5?r=qr",
     category: 'Business'
   },
   {
@@ -414,7 +414,7 @@ export const COURSES: Course[] = [
       "Learn the essential marketing structures and team accountabilities needed before you scale.",
       "Draft a clear, 6-month roadmap that aligns your core mission with actual profitability."
     ],
-    link: "#",
+    link: "https://bit.ly/4lqeIi5?r=qr",
     category: 'Business'
   },
   {
@@ -428,7 +428,7 @@ export const COURSES: Course[] = [
       "Understand the psychology of the customer journey—how to move someone from casually scrolling to actively buying, and buying again.",
       "Learn how to communicate your brand's mission in a way that creates loyal believers, not just one-time buyers."
     ],
-    link: "#",
+    link: "https://bit.ly/4lqeIi5?r=qr",
     category: 'Business'
   },
   {
@@ -442,7 +442,7 @@ export const COURSES: Course[] = [
       "Understand the simple, core metrics that dictate whether an ad is making or losing you money.",
       "Learn a structured, budget-friendly approach to launching ads that generate a real Return on Investment (ROI)."
     ],
-    link: "#",
+    link: "https://bit.ly/4lqeIi5?r=qr",
     category: 'Business'
   }
 ];

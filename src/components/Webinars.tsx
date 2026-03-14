@@ -70,10 +70,15 @@ export default function Webinars() {
                         ))}
                       </div>
 
-                      <button className="apply-button text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl font-tech font-bold text-sm uppercase tracking-[0.2em] flex items-center gap-4 transition-all">
+                      <a 
+                        href={course.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="apply-button text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl font-tech font-bold text-sm uppercase tracking-[0.2em] flex items-center gap-4 transition-all w-fit"
+                      >
                         Register Now
                         <ArrowRight className="w-4 h-4" />
-                      </button>
+                      </a>
                     </div>
 
                     <div className="w-full lg:w-80 shrink-0">
@@ -145,10 +150,15 @@ export default function Webinars() {
                         ))}
                       </div>
 
-                      <button className="apply-button text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl font-tech font-bold text-sm uppercase tracking-[0.2em] flex items-center gap-4 transition-all">
+                      <a 
+                        href={course.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="apply-button text-white px-6 py-3 sm:px-10 sm:py-5 rounded-xl font-tech font-bold text-sm uppercase tracking-[0.2em] flex items-center gap-4 transition-all w-fit"
+                      >
                         Register Now
                         <ArrowRight className="w-4 h-4" />
-                      </button>
+                      </a>
                     </div>
 
                     <div className="w-full lg:w-80 shrink-0">
