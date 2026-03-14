@@ -164,7 +164,7 @@ export default function App() {
                             </div>
                             <div className="absolute -bottom-4 -right-2 left-4 p-4 bg-cyan-accent rounded-xl shadow-xl z-20 transform rotate-3 group-hover:rotate-0 transition-transform duration-500 border border-white/20">
                               <p className="text-dark font-tech text-[10px] font-bold uppercase tracking-[0.2em] mb-0.5">Gretchen Veran</p>
-                              <p className="text-dark/60 font-tech text-[7px] uppercase tracking-widest leading-tight">Digital Marketing Partner</p>
+                              <p className="text-dark/60 font-tech text-[7px] uppercase tracking-widest leading-tight">Digital Marketing Partner, ETX Ph</p>
                             </div>
                           </div>
                         </div>
