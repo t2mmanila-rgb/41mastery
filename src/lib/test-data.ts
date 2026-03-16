@@ -355,7 +355,7 @@ export const COURSES: Course[] = [
       "Build repeatable AI workflows",
       "Support writing and organization"
     ],
-    link: "https://bit.ly/3N172q1?r=qr",
+    link: "",
     category: 'AI'
   },
   {
@@ -370,7 +370,7 @@ export const COURSES: Course[] = [
       "Create launch materials with AI",
       "Smart and ethical AI use in business"
     ],
-    link: "https://bit.ly/3N172q1?r=qr",
+    link: "",
     category: 'AI'
   },
   {
@@ -385,7 +385,7 @@ export const COURSES: Course[] = [
       "AI apps for career growth",
       "Human strengths AI cannot replace"
     ],
-    link: "https://bit.ly/3N172q1?r=qr",
+    link: "",
     category: 'AI'
   },
   // Business Growth Series (New)
@@ -414,7 +414,7 @@ export const COURSES: Course[] = [
       "Learn the essential marketing structures and team accountabilities needed before you scale.",
       "Draft a clear, 6-month roadmap that aligns your core mission with actual profitability."
     ],
-    link: "https://bit.ly/4lqeIi5?r=qr",
+    link: "",
     category: 'Business'
   },
   {
@@ -428,7 +428,7 @@ export const COURSES: Course[] = [
       "Understand the psychology of the customer journey—how to move someone from casually scrolling to actively buying, and buying again.",
       "Learn how to communicate your brand's mission in a way that creates loyal believers, not just one-time buyers."
     ],
-    link: "https://bit.ly/4lqeIi5?r=qr",
+    link: "",
     category: 'Business'
   },
   {
@@ -442,8 +442,23 @@ export const COURSES: Course[] = [
       "Understand the simple, core metrics that dictate whether an ad is making or losing you money.",
       "Learn a structured, budget-friendly approach to launching ads that generate a real Return on Investment (ROI)."
     ],
-    link: "https://bit.ly/4lqeIi5?r=qr",
+    link: "",
     category: 'Business'
+  },
+  {
+    id: "expat-webinar",
+    title: "You Worked Abroad — Now Make Your Money Work for You",
+    date: "July 10, 2026",
+    speaker: "Joanne Sison",
+    description: "A specialized financial strategy session for global professionals and former expats looking to optimize their wealth and investments.",
+    objectives: [
+      "Wealth management for former expats",
+      "Offshore and local investment strategies",
+      "Optimize tax and retirement planning",
+      "Build multi-currency passive income stream"
+    ],
+    link: "https://bit.ly/4ulEpEx?r=qr",
+    category: 'AI'
   }
 ];
 
