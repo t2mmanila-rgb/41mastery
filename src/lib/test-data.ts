@@ -448,8 +448,8 @@ export const COURSES: Course[] = [
   {
     id: "expat-webinar",
     title: "You Worked Abroad — Now Make Your Money Work for You",
-    date: "July 10, 2026",
-    speaker: "Joanne Sison",
+    date: "March 28, 2026 (Saturday) | 8:00 PM PST",
+    speaker: "Charmina Lou Bautista",
     description: "A specialized financial strategy session for global professionals and former expats looking to optimize their wealth and investments.",
     objectives: [
       "Wealth management for former expats",
