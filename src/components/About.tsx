@@ -3,10 +3,11 @@ import { motion } from 'motion/react';
 import { Globe, Target, Zap, MapPin, Users, ShieldCheck, Mail, Linkedin, Facebook, Instagram, Phone, Brain, Sparkles, BookOpen, Presentation, Code } from 'lucide-react';
 import joanneImg from '../assets/Joanne Sison.png';
 import gretchenImg from '../assets/Gretchen Veran.png';
+import charmzImg from '../assets/Charmz Bautista.png';
 
 const TEAM = [
   { name: "Rico Bautista", role: "Chief Executive Officer" },
-  { name: "Charmina Lou Bautista", role: "Managing Director" },
+  { name: "Charmina Lou Bautista", role: "Managing Director", image: charmzImg },
   { name: "Joanne Sison", role: "Data Analytics Partner, ETX Ph", image: joanneImg },
   { name: "Luis Sison, PhD", role: "AI & Technology Partner" },
   { name: "Xavier Marzan", role: "AI & Digital Transformation Partner" },
