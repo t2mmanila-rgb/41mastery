@@ -334,7 +334,7 @@ export const COURSES: Course[] = [
   {
     id: "pro-webinar",
     title: "Use AI Like a Pro: Save 5–10 Hours Every Week",
-    date: "March 27, 2026",
+    date: "March 27, 2026 (Friday) | 8:00 PM PST",
     speaker: "Joanne Sison",
     description: "Learn practical ways to use AI to save time each week, even if you're not techy.",
     objectives: [
@@ -396,7 +396,7 @@ export const COURSES: Course[] = [
   {
     id: "marketing-conversion",
     title: "Why Your Marketing Isn’t Converting — And How to Fix It in 30 Days",
-    date: "March 26, 2026",
+    date: "March 26, 2026 (Thursday) | 6:00 PM PST",
     speaker: "Gretchen Veran",
     description: "Expect a refreshed lens, and a rescue plan. We won’t be discussing MBA-level abstract marketing theories; we are going to look at the common mistakes Filipino mSMEs make that cost them sales, and how to pivot quickly.",
     objectives: [
