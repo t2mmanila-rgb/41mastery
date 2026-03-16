@@ -70,7 +70,7 @@ export default function Webinars() {
                         ))}
                       </div>
 
-                      {course.link && (
+                      {course.link ? (
                         <a 
                           href={course.link}
                           target="_blank"
@@ -80,13 +80,17 @@ export default function Webinars() {
                           Register Now
                           <ArrowRight className="w-4 h-4" />
                         </a>
+                      ) : (
+                        <div className="bg-teal/40 text-white/50 px-6 py-3 sm:px-10 sm:py-5 rounded-xl font-tech font-bold text-sm uppercase tracking-[0.2em] flex items-center gap-4 w-fit cursor-default border border-white/5">
+                          Opening Soon
+                        </div>
                       )}
                     </div>
 
                     <div className="w-full lg:w-80 shrink-0">
                       <div className="aspect-video lg:aspect-square rounded-3xl overflow-hidden relative">
                         <img 
-                          src={`https://picsum.photos/seed/${course.id}/800/800`} 
+                          src={course.image || `https://picsum.photos/seed/${course.id}/800/800`} 
                           className="w-full h-full object-cover grayscale opacity-80 group-hover:scale-110 transition-transform duration-1000"
                           referrerPolicy="no-referrer"
                         />
@@ -152,7 +156,7 @@ export default function Webinars() {
                         ))}
                       </div>
 
-                      {course.link && (
+                      {course.link ? (
                         <a 
                           href={course.link}
                           target="_blank"
@@ -162,13 +166,17 @@ export default function Webinars() {
                           Register Now
                           <ArrowRight className="w-4 h-4" />
                         </a>
+                      ) : (
+                        <div className="bg-teal/40 text-white/50 px-6 py-3 sm:px-10 sm:py-5 rounded-xl font-tech font-bold text-sm uppercase tracking-[0.2em] flex items-center gap-4 w-fit cursor-default border border-white/5">
+                          Opening Soon
+                        </div>
                       )}
                     </div>
 
                     <div className="w-full lg:w-80 shrink-0">
                       <div className="aspect-video lg:aspect-square rounded-3xl overflow-hidden relative">
                         <img 
-                          src={`https://picsum.photos/seed/${course.id}/800/800`} 
+                          src={course.image || `https://picsum.photos/seed/${course.id}/800/800`} 
                           className="w-full h-full object-cover grayscale opacity-80 group-hover:scale-110 transition-transform duration-1000"
                           referrerPolicy="no-referrer"
                         />

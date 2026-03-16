@@ -14,7 +14,10 @@ export interface Course {
   objectives: string[];
   link: string;
   category: 'AI' | 'Business';
+  image?: string;
 }
+
+import aiToolsImg from '../assets/AI Tools Image.png';
 
 export const QUESTIONS: Question[] = [
   // Concern
@@ -341,7 +344,8 @@ export const COURSES: Course[] = [
       "Use AI confidently without a technical background"
     ],
     link: "https://bit.ly/3N172q1?r=qr",
-    category: 'AI'
+    category: 'AI',
+    image: aiToolsImg
   },
   {
     id: "assistant-webinar",
