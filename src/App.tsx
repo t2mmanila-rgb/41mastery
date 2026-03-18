@@ -363,7 +363,7 @@ export default function App() {
                               <Sparkles className="w-6 h-6 text-cyan-accent" />
                             </div>
                             <div className="flex items-center gap-5 mb-10">
-                              <img src={course.image || (course.speaker === "Joanne Sison" ? joanneImg : gretchenImg)} className="w-20 h-20 rounded-xl object-cover grayscale" referrerPolicy="no-referrer" />
+                              <img src={course.image || (course.speaker === "Joanne Sison" ? joanneImg : gretchenImg)} className={`w-20 h-20 rounded-xl object-cover ${course.link ? '' : 'grayscale'}`} referrerPolicy="no-referrer" />
                               <div>
                                 <div className="font-display text-xl uppercase text-dark">{course.speaker}</div>
                                 <div className="font-tech text-xs text-teal uppercase tracking-[0.3em] font-bold mt-1">ETX Ph Partner</div>

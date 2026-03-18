@@ -91,7 +91,7 @@ export default function Webinars() {
                       <div className="aspect-video lg:aspect-square rounded-3xl overflow-hidden relative">
                         <img 
                           src={course.image || `https://picsum.photos/seed/${course.id}/800/800`} 
-                          className="w-full h-full object-cover grayscale opacity-80 group-hover:scale-110 transition-transform duration-1000"
+                          className={`w-full h-full object-cover transition-transform duration-1000 ${course.link ? 'opacity-100' : 'grayscale opacity-80'}`}
                           referrerPolicy="no-referrer"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent" />
@@ -177,7 +177,7 @@ export default function Webinars() {
                       <div className="aspect-video lg:aspect-square rounded-3xl overflow-hidden relative">
                         <img 
                           src={course.image || `https://picsum.photos/seed/${course.id}/800/800`} 
-                          className="w-full h-full object-cover grayscale opacity-80 group-hover:scale-110 transition-transform duration-1000"
+                          className={`w-full h-full object-cover transition-transform duration-1000 ${course.link ? 'opacity-100' : 'grayscale opacity-80'}`}
                           referrerPolicy="no-referrer"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent" />
