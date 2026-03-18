@@ -18,6 +18,8 @@ export interface Course {
 }
 
 import aiToolsImg from '../assets/AI Tools Image.png';
+import ofwImg from '../assets/OFWs Financial Literacy Image.png';
+import smeImg from '../assets/SMEs Marketing image.png';
 
 export const QUESTIONS: Question[] = [
   // Concern
@@ -405,7 +407,8 @@ export const COURSES: Course[] = [
       "Walk away with a realistic, 30-day action plan to plug the leaks in your sales process."
     ],
     link: "https://bit.ly/4lqeIi5?r=qr",
-    category: 'Business'
+    category: 'Business',
+    image: smeImg
   },
   {
     id: "growth-plan",
@@ -462,7 +465,8 @@ export const COURSES: Course[] = [
       "Build multi-currency passive income stream"
     ],
     link: "https://bit.ly/4ulEpEx?r=qr",
-    category: 'AI'
+    category: 'AI',
+    image: ofwImg
   }
 ];
 
@@ -502,9 +506,51 @@ export const calculateScores = (answers: Record<number, number>) => {
 };
 
 export const getRecommendation = (scores: any) => {
-  if (scores.Barriers > 70) return COURSES[0]; // AI Pro Webinar for high barriers
-  if (scores.Preparedness > 60) return COURSES[1]; // AI Assistant for those needing preparedness
-  if (scores.Exposure > 60) return COURSES[3]; // AI Jobs for high exposure
-  if (scores.Concern > 60) return COURSES[2]; // AI Income for high concern/opportunity
-  return COURSES[0]; // Default
+  const aiRecommendations: Course[] = [];
+  const marketingRecommendations: Course[] = [];
+
+  // Finding AI webinars
+  const aiWebinars = COURSES.filter(c => c.category === 'AI');
+  const businessWebinars = COURSES.filter(c => c.category === 'Business');
+
+  // Logic for AI Recommendations
+  // Using specific IDs or titles to be safe
+  const proWebinar = aiWebinars.find(c => c.id === "pro-webinar");
+  const assistantWebinar = aiWebinars.find(c => c.id === "assistant-webinar");
+  const incomeWebinar = aiWebinars.find(c => c.id === "income-webinar");
+  const jobsWebinar = aiWebinars.find(c => c.id === "jobs-webinar");
+
+  if (proWebinar && (scores.Barriers > 50 || scores.Overall < 40)) {
+    aiRecommendations.push(proWebinar);
+  }
+  if (assistantWebinar && (scores.Preparedness < 50 || scores.Exposure > 40)) {
+    aiRecommendations.push(assistantWebinar);
+  }
+  if (incomeWebinar && (scores.Concern > 50 || scores.Overall > 70)) {
+    aiRecommendations.push(incomeWebinar);
+  }
+  if (jobsWebinar && (scores.Exposure > 50)) {
+    aiRecommendations.push(jobsWebinar);
+  }
+
+  // Ensure at least one AI recommendation
+  if (aiRecommendations.length === 0 && proWebinar) {
+    aiRecommendations.push(proWebinar);
+  }
+
+  // Logic for Marketing Recommendations
+  if (scores.Overall > 50 || scores.Exposure > 50) {
+    const mainMarketing = businessWebinars.find(c => c.id === "marketing-conversion");
+    if (mainMarketing) marketingRecommendations.push(mainMarketing);
+    
+    const growthPlan = businessWebinars.find(c => c.id === "growth-plan");
+    if (growthPlan && scores.Preparedness < 50) {
+      marketingRecommendations.push(growthPlan);
+    }
+  }
+
+  return { 
+    ai: aiRecommendations, 
+    marketing: marketingRecommendations 
+  };
 };
