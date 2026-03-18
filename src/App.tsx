@@ -417,9 +417,12 @@ export default function App() {
                         <div className="flex items-center justify-between mt-auto">
                           <button 
                             onClick={() => course.link ? window.open(course.link, '_blank') : setPreSignupCourse(course)}
-                            className="font-tech text-xs font-bold uppercase tracking-[0.2em] text-teal hover:text-cyan-accent transition-colors flex items-center gap-2"
+                            className={course.link 
+                              ? "apply-button text-white px-6 py-3 rounded-xl font-tech text-xs font-bold uppercase tracking-[0.2em] flex items-center gap-2 transition-all shadow-lg hover:scale-105 active:scale-95"
+                              : "font-tech text-xs font-bold uppercase tracking-[0.2em] text-teal hover:text-cyan-accent transition-colors flex items-center gap-2"
+                            }
                           >
-                            {course.link ? 'Learn More' : 'Pre-sign up'}
+                            {course.link ? 'Sign Up Today!' : 'Pre-sign up'}
                             <ArrowRight className="w-4 h-4" />
                           </button>
                           <div className="font-tech text-[9px] font-bold uppercase tracking-widest text-dark/30">
